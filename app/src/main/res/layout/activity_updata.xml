@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".insertActivity">
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主题名:"
+        android:textSize="19sp"
+        />
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_below="@id/text_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内容:"
+        android:textSize="19sp"
+        />
+
+    <EditText
+        android:id="@+id/up_title_1"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入主题名"
+        />
+    <EditText
+        android:id="@+id/up_note_1"
+        android:layout_toRightOf="@id/text_2"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/up_title_1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:hint="请输入内容"
+        />
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_marginLeft="110dp"
+        android:layout_below="@id/up_note_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        />
+    <Button
+        android:id="@+id/button_2"
+        android:layout_marginLeft="220dp"
+        android:layout_below="@id/up_note_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        />
+</RelativeLayout>
