@@ -73,15 +73,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         registerForContextMenu(lvStudent);
-        Intent intent = getIntent();
-        String str1 = intent.getStringExtra("count1");
-        String str2 = "新建成功！现在在主页";
-        if(str1 != "-1"){
-            Toast.makeText(MainActivity.this,str2,Toast.LENGTH_SHORT).show();
-        }else {
-            Log.d("---------------", "onCreate: "+str2);
-            Log.d("---------------", "onCreate: 传参错误！");
-        }
+
     }
 
     @Override
@@ -114,8 +106,8 @@ public class MainActivity extends AppCompatActivity {
                                 String id = cursor.getString(cursor.getColumnIndex("_id"));
                                 Intent intent = new Intent(MainActivity.this, updataActivity.class);
                                 Bundle bundle = new Bundle();
-                                intent.putExtra("position",position);
                                 bundle.putString("id",id);
+                                bundle.putInt("position",position);
                                 intent.putExtras(bundle);
                                 startActivity(intent);
                             }

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".insertActivity">
+    tools:context=".updataActivity">
 
     <TextView
         android:id="@+id/text_1"
@@ -45,7 +45,7 @@
         />
 
     <Button
-        android:id="@+id/button_1"
+        android:id="@+id/button_submit"
         android:layout_marginLeft="110dp"
         android:layout_below="@id/up_note_1"
         android:layout_width="wrap_content"
